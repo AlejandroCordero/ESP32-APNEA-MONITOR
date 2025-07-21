@@ -1,0 +1,53 @@
+# === Archivos de compilación ===
+/build/
+/dist/
+/*.elf
+/*.bin
+/*.map
+
+# === Configuración local de ESP-IDF ===
+sdkconfig
+sdkconfig.old
+
+# === Archivos generados por CMake y Ninja ===
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+build.ninja
+rules.ninja
+compile_commands.json
+
+# === Archivos de flasheo y argumentos ===
+flash_project_args
+flash_project_args.json
+
+# === Archivos temporales y caches ===
+*.pyc
+*.pyo
+__pycache__/
+
+# === Archivos del sistema o del entorno ===
+.DS_Store
+*.swp
+*.swo
+*.swn
+
+# === Configuración de IDEs ===
+.vscode/
+.idea/
+
+# === Logs y trazas ===
+*.log
+*.csv
+*.trc
+*.pcap
+
+# === Entornos virtuales de Python ===
+.env/
+.venv/
+venv/
+
+# === Otros ===
+*.orig
+*.rej
