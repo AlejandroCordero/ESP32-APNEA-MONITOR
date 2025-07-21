@@ -1,0 +1,75 @@
+dependencies:
+  espressif/button:
+    component_hash: e162e6c8fc670ae297dca5ec75037966c1d69a1509f0b2048a883a7c54fb7aba
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=4.0'
+    - name: espressif/cmake_utilities
+      registry_url: https://components.espressif.com
+      require: private
+      version: 0.*
+    source:
+      registry_url: https://components.espressif.com
+      type: service
+    version: 2.5.6
+  espressif/cmake_utilities:
+    component_hash: 351350613ceafba240b761b4ea991e0f231ac7a9f59a9ee901f751bddc0bb18f
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=4.1'
+    source:
+      registry_url: https://components.espressif.com
+      type: service
+    version: 0.5.3
+  espressif/esp_lvgl_port:
+    component_hash: b43dc04720d126cbfe14d53a84787e4c24b7bd7f15468e224c930ad3ffb32258
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=4.4'
+    - name: lvgl/lvgl
+      registry_url: https://components.espressif.com
+      require: public
+      version: ^8
+    source:
+      registry_url: https://components.espressif.com
+      type: service
+    version: 1.4.0
+  espressif/esp_wrover_kit:
+    component_hash: 8a93e5df0b5bc14b826e12c0fd758b8912ec0c67a79e30d77bb46caa160f8978
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=4.4.5'
+    - name: espressif/esp_lvgl_port
+      registry_url: https://components.espressif.com
+      require: public
+      version: ^1
+    - name: espressif/button
+      registry_url: https://components.espressif.com
+      require: public
+      version: ^2.5
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    targets:
+    - esp32
+    version: 1.5.0~1
+  idf:
+    source:
+      type: idf
+    version: 5.3.1
+  lvgl/lvgl:
+    component_hash: d7c1ac037ae6e85d94897f807d6e7ba0946a83e720074fc95a4f6241da9f9f53
+    dependencies: []
+    source:
+      registry_url: https://components.espressif.com
+      type: service
+    version: 8.4.0
+direct_dependencies:
+- espressif/esp_wrover_kit
+manifest_hash: 9af330b8a0a0c758996a4e1b391fe3e46522bf4cd71f97e4a42e05f78f113a24
+target: esp32
+version: 2.0.0

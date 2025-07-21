@@ -1,11 +1,11 @@
-# === Archivos de compilación ===
+# === Archivos de compilaciï¿½n ===
 /build/
 /dist/
 /*.elf
 /*.bin
 /*.map
 
-# === Configuración local de ESP-IDF ===
+# === Configuraciï¿½n local de ESP-IDF ===
 sdkconfig
 sdkconfig.old
 
@@ -33,7 +33,7 @@ __pycache__/
 *.swo
 *.swn
 
-# === Configuración de IDEs ===
+# === Configuraciï¿½n de IDEs ===
 .vscode/
 .idea/
 
@@ -51,3 +51,5 @@ venv/
 # === Otros ===
 *.orig
 *.rej
+wifi.c
+wifi.h
